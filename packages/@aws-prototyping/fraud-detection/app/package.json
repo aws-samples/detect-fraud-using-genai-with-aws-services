@@ -1,0 +1,10 @@
+{
+  "name": "@aws-prototyping/app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "run": "python3 app.py",
+    "dev": "streamlit run app.py --server.runOnSave true"
+  }
+}

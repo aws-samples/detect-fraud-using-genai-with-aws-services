@@ -1,0 +1,26 @@
+{
+  "name": "image-fraud-detection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@ssh.gitlab.aws.dev:anz-prototyping/fraud-detection.git",
+  "author": "Elgin Lam <elginlam@amazon.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/@aws-prototyping/fraud-detection/*"
+    ],
+    "nohoist": []
+  },
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1"
+  }
+}

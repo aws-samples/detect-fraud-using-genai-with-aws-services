@@ -1,0 +1,7 @@
+# Defaults
+**/.git
+**/.svn
+**/.hg
+**/CVS
+**/.DS_Store
+.DS_Store

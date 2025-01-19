@@ -1,0 +1,89 @@
+Target directory: /Users/elginlam/Development/fraud-detection-oss
+Lint:
+✔  binary-exec-lib: Did not find a file matching the specified patterns
+	✔ **/*.jar
+	✔ **/*.exe
+	✔ **/*.dll
+	✔ **/*.pyc
+	✔ **/*.class
+	✔ **/*.so
+	✔ **/*.o
+	✔ **/*.a
+⚠  binary-archive: Found files
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Binary-Archive (FraudDetectionSample.zip)
+✔  binary-document: Did not find a file matching the specified patterns
+	✔ **/*.pdf
+	✔ **/*.doc
+	✔ **/*.docx
+	✔ **/*.xls
+	✔ **/*.xlsx
+	✔ **/*.ppt
+	✔ **/*.pptx
+	✔ **/*.odt
+✔  font-file: Did not find a file matching the specified patterns
+	✔ **/*.ttf
+	✔ **/*.otf
+	✔ **/*.svg
+	✔ **/*.eot
+	✔ **/*.woff
+	✔ **/*.woff2
+✔  amazon-logo: No file matching hash found
+⚠  third-party-image: Found files
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Third-Party-Image
+	⚠ doc/folders.png
+	⚠ doc/fraud-architecture.png
+	⚠ doc/opensearch1.png
+	⚠ doc/opensearch2.png
+	⚠ doc/opensearch3.png
+	⚠ packages/@aws-prototyping/fraud-detection/app/detect_ai_generated/laptop-generated.png
+✔  dataset: Did not find a file matching the specified patterns
+	✔ **/*.csv
+	✔ **/*.data
+	✔ **/*.tsv
+⚠  dockerfile: Found files
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Dockerfile
+	⚠ packages/@aws-prototyping/fraud-detection/app/api.dockerfile
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile
+✔  general-logo: Did not find a file matching the specified patterns (**/*logo*)
+⚠  dockerfile-download-statement:
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Dockerfile-Download-Statement/
+	⚠ packages/@aws-prototyping/fraud-detection/app/api.dockerfile: Contains 'from' on line 1, context: 
+	|FROM public.ecr.aws/lambda/python:3.12
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile: Contains 'from' on line 1, context: 
+	|# Use the official Ubuntu 22.04 stable image from Amazon ECR Public Gallery
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile: Contains 'from' on line 2, context: 
+	|FROM public.ecr.aws/ubuntu/ubuntu:22.04_stable
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile: Contains 'from' on line 23, context: 
+	|# Copy all files from the current directory to the container's working 
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile: Contains 'from' on line 26, context: 
+	|# Install Python dependencies from requirements.txt
+	⚠ packages/@aws-prototyping/fraud-detection/app/api.dockerfile: Contains 'curl' on line 8, context: 
+	|RUN microdnf update -y python3 curl libcom_err ncurses expat libblkid libuuid 
+	⚠ packages/@aws-prototyping/fraud-detection/app/app.dockerfile: Contains 'curl' on line 33, context: 
+	|HEALTHCHECK CMD curl --fail http://0.0.0.0:8501/_stcore/health
+✔  internal-url: Did not find content matching specified patterns
+✔  prohibited-license: Did not find content matching specified patterns
+✔  third-party-license-file: Did not find a file matching the specified patterns
+	✔ **/LICENSE*
+	✔ **/COPYING*
+	✔ **/COPYRIGHT*
+	✔ **/GPL*
+	✔ **/THANK*
+	✔ **/PATENT*
+⚠  hidden-or-generated-file: Found files
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Hidden-Generated-File
+	⚠ .gitignore
+	⚠ packages/@aws-prototyping/fraud-detection/infra/.gitignore
+	⚠ packages/@aws-prototyping/fraud-detection/infra/.npmignore
+	⚠ packages/@aws-prototyping/fraud-detection/app/.dockerignore
+	⚠ packages/@aws-prototyping/fraud-detection/app/.gitignore
+	⚠ packages/@aws-prototyping/fraud-detection/app/api_docs/.openapi-generator
+	⚠ packages/@aws-prototyping/fraud-detection/app/api_docs/.openapi-generator-ignore
+	⚠ packages/@aws-prototyping/fraud-detection/app/detect_ai_generated/.gitignore
+	⚠ packages/@aws-prototyping/fraud-detection/app/detect_ai_generated
+	⚠ packages/@aws-prototyping/fraud-detection/app/generated_image_detector.py
+	⚠ packages/@aws-prototyping/fraud-detection/app/detect_ai_generated/laptop-generated.png
+⚠  large-file: Large file(s) found:
+	ℹ PolicyUrl: https://w.amazon.com/bin/view/Open_Source/Tools/Repolinter/Ruleset/Large-File
+	⚠ /Users/elginlam/Development/fraud-detection-oss/packages/@aws-prototyping/fraud-detection/app/models_manifest.json: File size 804.894 KB bytes
+	⚠ /Users/elginlam/Development/fraud-detection-oss/packages/@aws-prototyping/fraud-detection/app/api_docs/index.html: File size 707.429 KB bytes
